@@ -22,7 +22,6 @@ const Detail = () => {
             localStorage.setItem('card', JSON.stringify(detailData))
         } else {
             const exits = haveLocalStorage.find(card => card.id === id);
-            console.log(exits)
             if (!exits) {
                 detailData.push(...haveLocalStorage, detail)
                 localStorage.setItem('card', JSON.stringify(detailData))
