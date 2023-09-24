@@ -4,7 +4,6 @@ import DisplayCard from './DisplayCard';
 
 const Home = () => {
     const cardsData = useLoaderData()
-    console.log(cardsData)
     return (
         <div>
             <Banner></Banner>
