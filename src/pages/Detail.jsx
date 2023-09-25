@@ -20,6 +20,7 @@ const Detail = () => {
         if (!haveLocalStorage) {
             detailData.push(detail)
             localStorage.setItem('card', JSON.stringify(detailData))
+            swal("Good job!", "successful donation given", "success");
         } else {
             const exits = haveLocalStorage.find(card => card.id === id);
             if (!exits) {
