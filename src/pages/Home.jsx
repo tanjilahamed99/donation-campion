@@ -17,8 +17,13 @@ const Home = () => {
 
     useEffect(() => {
         const searchByApi = cardsData.filter((card) => card.Title === search)
-        setSearchCard(searchByApi)
+        if (searchByApi.length > 0) {
+            setSearchCard(searchByApi)
+        } else {
+            setSearchCard(cardsData)
+        }
     }, [cardsData, search])
+
 
     return (
         <div>
