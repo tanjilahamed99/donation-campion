@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className="container mx-auto pt-5">
-            <div className="flex justify-between items-center">
+        <div className="container mx-auto pt-5 md:px-5 lg:mx-0">
+            <div className="flex flex-col md:flex-row justify-between items-center">
                 <img className="w-[200px]" src={'https://i.ibb.co/Zfdq6v5/Logo.png'} alt="" />
-                <nav className="flex gap-10 items-center">
+                <nav className="flex gap-10 items-center mt-10 md:mt-0">
                     <NavLink
                         to="/"
                         className={({ isActive, isPending }) =>

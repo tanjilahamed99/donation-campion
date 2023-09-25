@@ -35,7 +35,7 @@ const Detail = () => {
 
 
     return (
-        <div className="container mx-auto my-20">
+        <div className="container mx-auto my-20 p-5">
             <div className="relative">
                 <img className="w-[100%] h-[500px] mx-auto " src={Picture} alt="" />
                 <div className="absolute  top-[370px]  w-full p-10 bg-[#0B0B0B80]">

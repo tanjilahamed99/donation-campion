@@ -19,7 +19,7 @@ const Donation = () => {
     return (
         <div className="container mx-auto mt-10">
             {noDataFound ? <h2 className="font-bold text-5xl mt-52 text-center">No Data Found</h2> :
-                <div className="grid grid-cols-2 gap-5 items-center">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-5 items-center px-5">
                     {
                         seeAll ? cardsData.map((card) => <DisplayDonation key={card.id} card={card}></DisplayDonation>) :
                             cardsData.slice(0, 4).map((card) => <DisplayDonation key={card.id} card={card}></DisplayDonation>)
