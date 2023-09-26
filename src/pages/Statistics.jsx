@@ -43,9 +43,9 @@ export default class Example extends PureComponent {
     render() {
         return (
             <div>
-                <div className='flex  justify-center'>
-                    <ResponsiveContainer width={500} height={500}>
-                        <PieChart width={500} height={500}>
+                <div className='flex justify-center'>
+                    <ResponsiveContainer width={300} height={300}>
+                        <PieChart width={50} height={50}>
                             <Pie
                                 data={data}
                                 cx="50%"
@@ -64,9 +64,9 @@ export default class Example extends PureComponent {
                     </ResponsiveContainer>
 
                 </div>
-                <div className='flex items-center text-center justify-evenly gap-20'>
-                    <h2 >Your donation :<span className='border-2 border-[#00C49F] w-[50px] px-10 bg-[#00C49F]'></span> </h2>
-                    <h2>Total donation :<span className='border-2 border-[#FF444A] w-[50px] px-10 bg-[#FF444A]'></span> </h2>
+                <div className='flex flex-col md:flex-row items-center md:text-center md:justify-evenly md:gap-20 gap-3'>
+                    <h2 >Your donation :<span className='border-2 border-[#00C49F] w-[50px] md:px-10 px-4 bg-[#00C49F]'></span> </h2>
+                    <h2>Total donation :<span className='border-2 border-[#FF444A] w-[50px] md:px-10 px-4 bg-[#FF444A]'></span> </h2>
                 </div>
             </div>
         );
