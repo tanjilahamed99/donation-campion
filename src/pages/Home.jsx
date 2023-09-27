@@ -33,13 +33,16 @@ const Home = () => {
 
     return (
         <div>
-            <div className="h-[500px] pt-52  bg-[url('https://i.ibb.co/2Fxbg1x/Rectangle-4281.png')] bg-no-repeat bg-cover">
+            <div className="hero min-h-screen " style={{ backgroundImage: 'url(https://i.ibb.co/2Fxbg1x/Rectangle-4281.png)' }}>
+                <div className="hero-overlay bg-opacity-80 bg-white"></div>
+                <div className="hero-content text-center text-neutral-content">
                 <div className=" ">
                     <h2 className="text-center text-[#0B0B0B] text-2xl md:text-4xl font-bold px-3">I Grow By Helping People In Need</h2>
                     <form onSubmit={handleSubmit} className="mx-auto flex justify-center mt-8">
-                        <input name="input" className="py-3 px-3 md:w-[40%] lg:w-[20%] w-[60%] rounded-md border text-[#BBBBA7]" type="text" placeholder="Search here...." />
+                        <input name="input" className="py-3 px-3 md:w-[40%] lg:w-[50%] w-[60%] rounded-md border text-[#BBBBA7]" type="text" placeholder="Search here...." />
                         <input onClick={() => setBtn(true)} className="btn  px-4 py-3  rounded-md bg-[#FF444A] text-white" type="submit" value="Search" />
                     </form>
+                </div>
                 </div>
             </div>
 
