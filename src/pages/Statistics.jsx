@@ -2,6 +2,7 @@ import { PureComponent } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 
+let total = 12
 let donation = JSON.parse(localStorage.getItem('card')) || 0
 console.log(donation)
 
@@ -9,11 +10,10 @@ let donationLength = 0;
 
 if (donation.length > 0) {
     donationLength = donationLength + donation.length
-
 }
 
 const data = [
-    { name: 'Group A', value: 12 },
+    { name: 'Group A', value: total },
     { name: 'Group A', value: donationLength }
 ];
 
@@ -38,7 +38,6 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 };
 
 export default class Example extends PureComponent {
-    static demoUrl = 'https://codesandbox.io/s/pie-chart-with-customized-label-dlhhj';
 
     render() {
         return (
